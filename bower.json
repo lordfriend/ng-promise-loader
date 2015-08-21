@@ -1,0 +1,31 @@
+{
+  "name": "promise-loader",
+  "version": "0.0.1",
+  "description": "Create an loading animation in front of the containing element when a promise in pending state",
+  "main": "dist/promise-loader",
+  "keywords": [
+    "promise",
+    "loading",
+    "spinner",
+    "angular"
+  ],
+  "authors": [
+    "Bob Yuan"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.3",
+    "bootstrap": "~3.3.5",
+    "spinkit": "~1.2.1"
+  }
+}
