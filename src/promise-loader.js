@@ -19,7 +19,7 @@ angular.module('ngPromiseLoader', [])
 
     return {
       restrict: 'A',
-      compile: function promiseLoaderCompile (tElement) {
+      compile: function promiseLoaderCompile(tElement) {
         tElement.addClass('promise-loader');
         var loaderBackdropElement = angular.element(loaderBackdropTemplate);
         loaderBackdropElement.children().eq(0).append(angular.element(defaultSpinner));

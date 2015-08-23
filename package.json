@@ -1,0 +1,28 @@
+{
+  "name": "ng-promise-loader",
+  "version": "1.0.0",
+  "description": "Create an loading animation in front of the containing element when a promise in pending state",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lordfriend/ng-promise-loader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordfriend/ng-promise-loader/issues"
+  },
+  "homepage": "https://github.com/lordfriend/ng-promise-loader",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "wrench": "^1.5.8"
+  }
+}

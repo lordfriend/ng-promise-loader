@@ -4,11 +4,16 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
-gulp.task('serve', function() {
-  browserSync.init({
-    server: './examples'
+module.exports = function() {
+  gulp.task('serve', ['sass'], function() {
+    browserSync.init({
+      server: {
+        baseDir: 'examples',
+        routes: {
+          '/bower_components': 'bower_components',
+          '/src': 'src'
+        }
+      }
+    });
   });
-
-  gulp.watch("app/scss/*.scss", ['sass']);
-  gulp.watch("app/*.html").on('change', browserSync.reload);
-});
+};
