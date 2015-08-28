@@ -15,5 +15,9 @@ module.exports = function() {
         }
       }
     });
+
+    gulp.watch(['examples/*.scss', 'src/*.scss'], ['sass']);
+    gulp.watch(['examples/*.html', 'examples/*.js', 'src/*.js'])
+      .on('change', browserSync.reload);
   });
 };
