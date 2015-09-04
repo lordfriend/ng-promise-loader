@@ -13,7 +13,7 @@ angular.module('ngPromiseLoader', [])
                                   '<div class="error-toast">' +
                                     '<span class="error-text"></span>' +
                                   '</div>' +
-                                '</div>'
+                                '</div>';
     var defaultSpinner = '<div class="sk-three-bounce">';
     var i;
     for(i = 1; i <= 3; i++) {
@@ -26,17 +26,14 @@ angular.module('ngPromiseLoader', [])
       compile: function promiseLoaderCompile(tElement) {
         tElement.addClass('promise-loader');
         var loaderBackdropElement = angular.element(loaderBackdropTemplate);
-        loaderBackdropElement.children().eq(0).append(angular.element(defaultSpinner));
+        angular.element(loaderBackdropElement[0].querySelector('.loader')).append(angular.element(defaultSpinner));
         tElement.append(loaderBackdropElement);
+        tElement.append(angular.element(errorBackdropTemplate));
         return function promiseLoaderLink ($scope, $element, $attrs) {
-          var i, loaderBackdrop;
-          var childrenElements = $element.children();
-          for(i = childrenElements.length - 1; i >= 0; i--) {
-            if(childrenElements.eq(i).hasClass('loader-backdrop')) {
-              loaderBackdrop = childrenElements.eq(i);
-              break;
-            }
-          }
+          var loaderBackdrop = angular.element($element[0].querySelector('.loader-backdrop')),
+            errorBackdrop = angular.element($element[0].querySelector('.error-backdrop')),
+            errorText = angular.element($element[0].querySelector('.error-text'));
+
 
           if($attrs.backdrop === 'true') {
             loaderBackdrop.addClass('show-backdrop');
@@ -44,9 +41,14 @@ angular.module('ngPromiseLoader', [])
 
           $scope.$watch($attrs.promiseLoader, function(newValue) {
             if(newValue && newValue.then) {
+              // hide error message when new promise is in pending state
+              errorBackdrop.removeClass('show');
+              errorText.empty();
+
               loaderBackdrop.addClass('show');
               newValue.catch(function(error) {
-
+                errorText.text(error.message);
+                errorBackdrop.addClass('show');
               })
                 ['finally'](function() {
                 loaderBackdrop.removeClass('show');

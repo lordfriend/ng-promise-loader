@@ -6077,6 +6077,15 @@ button.close {
       transform: translate3d(-50%, -50%, 0); }
     .promise-loader .loader-backdrop.show {
       display: block; }
+  .promise-loader .error-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none; }
+    .promise-loader .error-backdrop.show {
+      display: block; }
 
 /*
  *  Usage:

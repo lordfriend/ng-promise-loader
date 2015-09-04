@@ -23,6 +23,18 @@
       display: block;
     }
   }
+
+  .error-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
 }
 
 @import '../bower_components/spinkit/scss/_variables';
