@@ -2,7 +2,10 @@
   "name": "ng-promise-loader",
   "version": "1.0.0",
   "description": "Create an loading animation in front of the containing element when a promise in pending state",
-  "main": "dist/promise-loader",
+  "main": [
+    "dist/js/ng-promise-loader.js",
+    "dist/css/ng-promise-loader.css"
+  ],
   "keywords": [
     "promise",
     "loading",
