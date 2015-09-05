@@ -2,7 +2,7 @@
  * Created by bob on 8/20/15.
  */
 var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync');
 
 module.exports = function() {
   gulp.task('serve', ['sass'], function() {

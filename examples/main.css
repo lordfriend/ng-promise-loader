@@ -6086,6 +6086,18 @@ button.close {
     display: none; }
     .promise-loader .error-backdrop.show {
       display: block; }
+    .promise-loader .error-backdrop .error-toast {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      padding: 4px 8px;
+      background: #f6e185;
+      box-shadow: 0 1px 5px 0 #ccc; }
+    .promise-loader .error-backdrop .error-text {
+      color: #b3382b;
+      font-size: 14px;
+      font-weight: 400; }
 
 /*
  *  Usage:

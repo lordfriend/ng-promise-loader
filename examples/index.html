@@ -48,6 +48,29 @@
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>Error Toast</h4>
+          </div>
+          <div class="panel-body">
+            <form class="form-inline">
+              <button class="btn btn-default" type="button" ng-click="loadError()">Load Data(will fail)</button>
+            </form>
+            <div promise-loader="errorPromise" backdrop="true">
+              <div class="jumbotron">
+                <h5>
+                  This area has a promise which will always be rejected
+                </h5>
+                <p>when a promise failed, return an error with failed message will show that message</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="../bower_components/angular/angular.js"></script>
