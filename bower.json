@@ -21,14 +21,18 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "examples"
   ],
   "dependencies": {
-    "angular": "~1.4.3"
+    "angular": ">=1.2"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.3",
     "spinkit": "~1.2.1",
     "bootstrap-sass": "~3.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/lordfriend/ng-promise-loader.git"
   }
 }
