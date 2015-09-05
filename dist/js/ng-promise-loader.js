@@ -1,5 +1,5 @@
 /**
- * ng-promise-loader <%= version %>
+ * ng-promise-loader 1.0.1
  * License: MIT License
  */
 'use strict';
