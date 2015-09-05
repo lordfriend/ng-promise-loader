@@ -6116,7 +6116,7 @@ button.close {
   .sk-three-bounce .sk-child {
     width: 18px;
     height: 18px;
-    background-color: #333;
+    background-color: #2e97ff;
     border-radius: 100%;
     display: inline-block;
     animation: sk-three-bounce 1.4s ease-in-out 0s infinite both; }

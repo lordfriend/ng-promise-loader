@@ -21,13 +21,20 @@
   "homepage": "https://github.com/lordfriend/ng-promise-loader",
   "devDependencies": {
     "browser-sync": "^2.8.2",
+    "del": "^2.0.1",
     "gulp": "^3.9.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
+    "gulp-template": "^3.0.0",
+    "gulp-uglify": "^1.4.0",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.9",
     "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^0.2.1",
     "phantomjs": "^1.9.18",
+    "uglify-save-license": "^0.4.1",
     "wrench": "^1.5.8"
   }
 }

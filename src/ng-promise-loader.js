@@ -1,5 +1,6 @@
 /**
- * An directive to create an loader base on promise
+ * ng-promise-loader <%= version %>
+ * License: MIT License
  */
 'use strict';
 
