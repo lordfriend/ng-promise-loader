@@ -8,7 +8,7 @@ module.exports = function(config) {
     files: [
       {pattern: 'bower_components/angular/angular.js'},
       {pattern: 'bower_components/angular-mocks/angular-mocks.js'},
-      {pattern: 'src/promise-loader.js'},
+      {pattern: 'src/ng-promise-loader.js'},
       {pattern: 'test/*.spec.js'}
     ],
     browsers: ['PhantomJS'],
